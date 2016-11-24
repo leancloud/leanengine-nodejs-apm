@@ -13,7 +13,7 @@ exports.sendMetrics = function(data) {
   }
 
   request({
-    url: 'https://apm.leanapp.cn/metrics',
+    url: (process.env.APM_URL_PREFIX || 'http://apm.leanapp.cn') + '/metrics',
     method: 'POST',
     json: data,
     headers: {
