@@ -1,6 +1,6 @@
 {
   "name": "leanengine-apm",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "LeanEngine application performance monitoring",
   "dependencies": {
     "debug": "2.0.0",
