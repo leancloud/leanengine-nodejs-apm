@@ -2,6 +2,11 @@
   "name": "leanengine-apm",
   "version": "0.4.2",
   "description": "LeanEngine application performance monitoring",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leancloud/leanengine-nodejs-apm"
+  },
   "dependencies": {
     "debug": "2.0.0",
     "on-finished": "2.3.0",
@@ -10,7 +15,6 @@
     "request": "2.78.0",
     "underscore": "1.8.3"
   },
-  "license": "MIT",
   "devDependencies": {
     "async": "^1.5.0",
     "chai": "^3.4.1",
