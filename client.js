@@ -5,7 +5,7 @@ exports.token = null;
 
 exports.sendMetrics = function(data) {
   if (exports.token === null) {
-    console.error('APM was disabled because token is empty');
+    console.error('[APM] was disabled because token is empty');
     exports.token = 'disabled';
     return;
   } else if (exports.token === 'disabled') {
@@ -21,7 +21,7 @@ exports.sendMetrics = function(data) {
     }
   }, function(err, res, body) {
     if (err) {
-      console.error(err);
+      console.error('[APM] sendMetrics', err);
     } else {
       debug('sendMetrics', res.statusCode, body);
     }
