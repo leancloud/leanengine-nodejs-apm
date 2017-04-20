@@ -10,6 +10,8 @@ module.exports = {
 
   express: express,
   cloudApi: cloudApi,
+  runTask: task.runTask,
   createTracker: task.createTracker,
-  wrapTask: task.wrapTask
+  wrapTask: task.wrapTask,
+  wrapCallbackTask: task.wrapCallbackTask
 };

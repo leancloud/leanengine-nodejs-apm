@@ -12,6 +12,8 @@ exports.sendMetrics = function(data) {
     return;
   }
 
+  debug('sendMetrics:request', data);
+
   request({
     url: (process.env.APM_URL_PREFIX || 'http://apm.leanapp.cn') + '/metrics',
     method: 'POST',
@@ -23,7 +25,7 @@ exports.sendMetrics = function(data) {
     if (err) {
       console.error('[APM] sendMetrics', err);
     } else {
-      debug('sendMetrics', res.statusCode, body);
+      debug('sendMetrics:response', res.statusCode, body);
     }
   });
 };
