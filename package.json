@@ -1,6 +1,6 @@
 {
   "name": "leanengine-apm",
-  "version": "0.4.2",
+  "version": "0.5.0",
   "description": "LeanEngine application performance monitoring",
   "license": "Apache-2.0",
   "repository": {
